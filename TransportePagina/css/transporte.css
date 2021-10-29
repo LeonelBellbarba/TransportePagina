@@ -1,0 +1,229 @@
+/* font-family: 'Scheherazade New', serif; */
+
+body{
+    font-family: 'Scheherazade New', serif;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+header{
+    background-color: rgb(52, 52, 167);
+    padding: 16px;
+
+}
+
+header h1{
+    color: white;
+    font-size: 2,5em;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block; /*estzo es para colocar todo en la misma linea */
+    position: relative;
+    bottom: 35px;
+    
+}
+
+nav{
+    background-color: rgb(142, 142, 204); 
+    margin-bottom: 20px;
+}
+
+nav ul{
+    
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 16%;
+    background-color: rgb(122, 122, 177);   
+    text-align: center;
+    justify-content: space-between;
+}
+
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+        
+    display: block;
+}
+
+nav ul li:hover{    
+    background-color: rgb(104, 104, 151);
+}
+
+nav ul li a.activo{
+    background-color: rgb(94, 94, 134); ;
+}
+
+footer{
+    background-color: cadetblue;
+    padding: 25px 0;
+    text-align: center;
+    clear: both;
+}
+
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+    
+}
+
+.holder img{
+    max-width: 100%;
+}
+
+h2{
+    color: rgb(180, 136, 136);
+    font-weight: 400;
+}
+
+@media screen and (max-width:768px){
+    .holder{
+        max-width: 768px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .servicio img,
+    .servicio .info{
+        box-sizing: border-box;
+    }
+
+    .servicio img{
+        max-width: 22%;
+    }
+
+}
+
+
+@media screen and (max-width:480px){
+    
+    .columnas{
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    
+    .columnas .bienvenidos, 
+    .columnas .Testimonios{
+        width: auto;
+        float: none;
+        display: block;
+        clear: both;
+    }    
+
+    .bienvenidos p{
+        font-size: 16px;
+    }
+
+    .bienvenidos{
+        width: 50%;
+        min-width: 220px;
+        margin: 0 auto;
+    }
+
+    .staff .personas{
+        display: block;
+        
+    }
+
+    .staff .persona{
+        width: 100%;
+        
+        margin-bottom: 10px;
+    }
+
+
+    .holder .servicio{
+        margin: 0 0 10px 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .holder .servicio .info{
+        display: block;
+        
+        max-width: 100%;
+       
+       
+        float: none;
+        
+    }
+    
+    .holder .servicio img{
+        max-width: 100%;
+        
+        
+    }
+
+    .holder .servicio:nth-child(odd) img,
+    .holder .servicio:nth-child(even) img{
+        float: none;
+    }
+
+    .servicio img{
+        max-width: 100%;
+    }
+
+
+    .holder .contacto,
+    .holder .redes{
+        float: none;
+        width: 100%;
+    }
+
+    .contacto label,
+    .contacto input,
+    .contacto textarea{
+        width: 100%;
+        display: block;
+    }
+
+    .contacto{
+        border-right: none;
+    }
+
+    .centrar{
+        display: flex;
+        justify-content: center;
+    }
+
+    header .logo{
+        text-align: center;
+    }
+
+    header .logo h1{
+        display: block;
+        position: static;
+    }
+
+    nav ul.holder{
+        padding: 0;
+    }
+
+    nav ul li{
+        display: block;
+        width: auto;
+    }
+
+    .holder.galeria .foto{
+        width: 33%;
+        margin-left: 5%;
+
+    }
+
+    .holder .galeria.foto:nth-child(5n+1){
+        margin-left: 5%;
+    }
+
+    .holder .galeria.foto:nth-child(3n+1){
+        margin-left: 0;
+    }
+
+}
+
